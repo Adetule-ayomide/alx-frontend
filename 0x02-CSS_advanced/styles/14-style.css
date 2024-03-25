@@ -1,0 +1,141 @@
+/* Custom properties */
+
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --font-family-base: "Open Sans", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+  --section-header-align: center;
+  --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+}
+
+/* makes scrolling of the document smooth and reducing the font size */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/**
+ * change the color of the text
+ * change the font family, font size, font weight
+ * define the line spacing
+*/
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+}
+
+/* Hide the class with vusually-hidden */
+
+.visually-hidden {
+  display: none;
+}
+
+/**
+ * anchor element only target those containing a hyperlink
+ * change the color of the anchor tag
+ * remove all decoration on the anchor tag
+*/
+
+a:link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/**
+ * anchor element target the visited state for the link
+ * change font style to italic when visited
+*/
+
+a:visited {
+  font-style: italic;
+}
+
+/**
+ * under the text when it been hover on
+*/
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* change the background when it active */
+a:active {
+  background: var(--color-light-grey);
+}
+
+/* align the text to the center */
+
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* change text color */
+
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}
+
+/**
+ * change the font family, font size, font weight
+ * set the margin of class section-title
+ * change the text color
+*/
+
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+/**
+ * change the font-family and font weight
+ * change the text to upperase
+*/
+
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+
+/**
+ * All heading tags the same font family
+ * All heading tags has the same font weight
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
