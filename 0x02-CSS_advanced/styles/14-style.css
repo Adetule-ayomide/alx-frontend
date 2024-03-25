@@ -1,4 +1,6 @@
-/* Custom properties */
+/**
+ * Custom properties
+*/
 
 :root {
   --color-primary: #d73953;
@@ -27,7 +29,9 @@
   --section-title-color: var(--color-black);
 }
 
-/* makes scrolling of the document smooth and reducing the font size */
+/**
+ * makes scrolling of the document smooth and reducing the font size
+*/
 
 html {
   scroll-behavior: smooth;
@@ -48,7 +52,9 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Hide the class with vusually-hidden */
+/**
+ * Hide the class with vusually-hidden
+*/
 
 .visually-hidden {
   display: none;
@@ -82,18 +88,25 @@ a:hover {
   text-decoration: underline;
 }
 
-/* change the background when it active */
+/**
+ * change the background when it active
+*/
+
 a:active {
   background: var(--color-light-grey);
 }
 
-/* align the text to the center */
+/**
+ * align the text to the center
+*/
 
 .section-header {
   text-align: var(--section-header-align);
 }
 
-/* change text color */
+/**
+ * change text color
+*/
 
 .card-category,
 .section-tagline {
